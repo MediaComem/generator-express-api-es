@@ -1,19 +1,25 @@
 {
   "name": "generator-express-api-es",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Same boilerplate as the official express generator, but with ES Modules and no view rendering. Built with Yeoman.",
   "files": [
     "generators"
   ],
   "type": "module",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "express",
+    "ES modules"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Simon Pinkas",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^5.0.1",
     "glob": "^8.0.3",
