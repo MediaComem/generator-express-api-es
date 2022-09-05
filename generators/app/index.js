@@ -12,7 +12,6 @@ const __dirname = path.dirname(__filename);
 
 export default class extends Generator {
   constructor(args, opts) {
-    // Calling the super constructor is important so our generator is correctly set up
     super(args, opts, { customInstallTask: true });
     this.options = opts;
     this.slugify = kebabCase;
@@ -24,8 +23,8 @@ export default class extends Generator {
       {
         type: "input",
         name: "name",
-        message: "Please enter your project name",
-        default: "express-api" // Default to current folder name
+        message: "Enter your project's name",
+        default: "express-api"
       },
       {
         type: "confirm",
