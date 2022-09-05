@@ -1,0 +1,23 @@
+{
+  "name": "generator-express-api-es",
+  "version": "0.1.0",
+  "description": "Same boilerplate as the official express generator, but with ES Modules and no view rendering. Built with Yeoman.",
+  "files": [
+    "generators"
+  ],
+  "type": "module",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "glob": "^8.0.3",
+    "lodash-es": "^4.17.21",
+    "yeoman-generator": "^5.7.0"
+  }
+}
