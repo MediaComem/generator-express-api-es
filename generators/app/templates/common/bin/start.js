@@ -5,9 +5,10 @@
  */
 
 import app from "../app.js";
-import debug from "debug";
+import createDebugger from "debug";
 import http from "http";
 
+const debug = createDebugger('<%= slugify(appname) %>:server')
 /**
  * Get port from environment and store in Express.
  */
