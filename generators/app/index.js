@@ -38,7 +38,6 @@ export default class extends Generator {
   }
 
   writing() {
-    console.log(this.options);
     if (this.options.createDirectory) {
       this.destinationRoot(this.options.dirname);
       this.appname = this.options.dirname;
@@ -83,7 +82,7 @@ export default class extends Generator {
 You can start it by entering the following commands:`)
     );
     this.log(
-      chalk.bgWhite(`cd ${this.options.dirname}
+      chalk.bold.white(`cd ${this.options.dirname}
 npm start `)
     );
   }
