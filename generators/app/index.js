@@ -83,7 +83,7 @@ You can start it by entering the following commands:`)
     );
     this.log(
       chalk.bold.white(`cd ${this.options.dirname}
-npm start `)
+DUBUG=${this.options.dirname}:* npm start `)
     );
   }
 }
