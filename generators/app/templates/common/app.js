@@ -9,9 +9,6 @@ import usersRouter from "./routes/users.js";
 
 const app = express();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
