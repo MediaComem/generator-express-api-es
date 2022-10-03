@@ -1,6 +1,6 @@
 {
   "name": "generator-express-api-es",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Same boilerplate as the official Express generator, but with ES Modules and no view rendering. Built with Yeoman.",
   "files": [
     "generators"
