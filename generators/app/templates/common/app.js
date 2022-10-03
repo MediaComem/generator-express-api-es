@@ -1,4 +1,5 @@
 import express from "express";
+import createError from "http-errors";
 import logger from "morgan";
 import indexRouter from "./routes/index.js";
 import usersRouter from "./routes/users.js";
@@ -25,6 +26,7 @@ app.use(function (err, req, res, next) {
 
   // Send the error status
   res.status(err.status || 500);
+  res.send(err.message);
 });
 
 export default app;
