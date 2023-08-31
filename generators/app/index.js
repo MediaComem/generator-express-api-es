@@ -1,5 +1,5 @@
 import Generator from "yeoman-generator";
-import glob from "glob";
+import { globSync } from "glob";
 import path from "path";
 import chalk from "chalk";
 
@@ -44,32 +44,24 @@ export default class extends Generator {
     }
 
     this.sourceRoot(path.join(__dirname, "templates", "common"));
-    glob
-      .sync("**", {
-        cwd: this.sourceRoot(),
-        dot: true
-      })
-      .map((file) =>
-        this.fs.copyTpl(
-          this.templatePath(file),
-          this.destinationPath(file),
-          this
-        )
-      );
+    globSync("**", {
+      cwd: this.sourceRoot(),
+      dot: true
+    }).map((file) =>
+      this.fs.copyTpl(this.templatePath(file), this.destinationPath(file), this)
+    );
 
     // routes
     this.sourceRoot(path.join(__dirname, "templates", "routes"));
-    glob
-      .sync("**", {
-        cwd: this.sourceRoot()
-      })
-      .map((file) =>
-        this.fs.copyTpl(
-          this.templatePath(file),
-          this.destinationPath(path.join("routes", file)),
-          this
-        )
-      );
+    globSync("**", {
+      cwd: this.sourceRoot()
+    }).map((file) =>
+      this.fs.copyTpl(
+        this.templatePath(file),
+        this.destinationPath(path.join("routes", file)),
+        this
+      )
+    );
   }
   async install() {
     this.log.info("Installing npm packages");
