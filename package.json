@@ -18,7 +18,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Simon Pinkas",
+  "author": "Simon Pinkas <simon.pinkas@heig-vd.ch>",
+  "contributors": [
+    "Simon Oulevay <simon.oulevay@heig-vd.ch>"
+  ],
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.3.0",
