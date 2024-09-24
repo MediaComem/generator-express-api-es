@@ -1,7 +1,10 @@
 # generator-express-api-es
-**Same boilerplate as the official Express generator, but with ES Modules and no view rendering.** 
 
-Built with Yeoman for the Web-oriented Architecture course in the Media Engineering department at HEIG-VD
+[![license](https://img.shields.io/github/license/MediaComem/comem-rest-demo)](https://opensource.org/licenses/MIT)
+
+**Same boilerplate as the official Express generator, but with ES Modules and no view rendering.**
+
+Built with Yeoman for the Web-Oriented Architecture course in the Media Engineering department at HEIG-VD
 
 ## Installation
 
@@ -17,6 +20,7 @@ Then generate your new project:
 ```bash
 yo express-api-es
 ```
+
 ## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
