@@ -20,7 +20,3 @@ Then generate your new project:
 ```bash
 yo express-api-es
 ```
-
-## License
-
-[MIT License](http://en.wikipedia.org/wiki/MIT_License)
